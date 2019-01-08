@@ -14738,7 +14738,7 @@ R2 2 3 {val-val*val/10}
 <part name="TONE_IN" library="MusicThingModular" deviceset="THONKICONN" device="NEW"/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
-<part name="R16" library="GMSN" deviceset="RESISTOR_US" device="M0805" value="470k">
+<part name="R16" library="GMSN" deviceset="RESISTOR_US" device="M0805" value="470">
 <spice>
 <pinmapping spiceprefix="R">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -14748,7 +14748,7 @@ R2 2 3 {val-val*val/10}
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
-<part name="R17" library="GMSN" deviceset="RESISTOR_US" device="M0805" value="470k">
+<part name="R17" library="GMSN" deviceset="RESISTOR_US" device="M0805" value="470">
 <spice>
 <pinmapping spiceprefix="R">
 <pinmap gate="G$1" pin="1" pinorder="1"/>

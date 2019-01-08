@@ -14758,6 +14758,8 @@ R2 2 3 {val-val*val/10}
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14798,7 +14800,7 @@ R2 2 3 {val-val*val/10}
 <instance part="R2" gate="G$1" x="0" y="-111.76" rot="R180"/>
 <instance part="R7" gate="G$1" x="-2.54" y="-144.78" rot="R180"/>
 <instance part="R12" gate="G$1" x="5.08" y="-157.48" rot="R270"/>
-<instance part="GAIN_IN" gate="G$1" x="-17.78" y="-142.24" rot="R180"/>
+<instance part="GAIN_IN" gate="G$1" x="-15.24" y="-147.32" rot="MR0"/>
 <instance part="LDR2" gate="G$1" x="99.06" y="-111.76" rot="R90"/>
 <instance part="SUPPLY4" gate="+12V" x="53.34" y="-119.38"/>
 <instance part="SUPPLY5" gate="G$1" x="53.34" y="-139.7"/>
@@ -14809,13 +14811,15 @@ R2 2 3 {val-val*val/10}
 <instance part="R13" gate="G$1" x="63.5" y="-129.54" rot="R180"/>
 <instance part="R14" gate="G$1" x="60.96" y="-162.56" rot="R180"/>
 <instance part="R15" gate="G$1" x="68.58" y="-175.26" rot="R270"/>
-<instance part="TONE_IN" gate="G$1" x="45.72" y="-160.02" rot="R180"/>
+<instance part="TONE_IN" gate="G$1" x="48.26" y="-165.1" rot="MR0"/>
 <instance part="SUPPLY7" gate="G$1" x="38.1" y="-109.22"/>
 <instance part="SUPPLY8" gate="G$1" x="101.6" y="-127"/>
 <instance part="R16" gate="G$1" x="33.02" y="-132.08" rot="R90"/>
 <instance part="SUPPLY9" gate="+12V" x="25.4" y="-134.62"/>
 <instance part="R17" gate="G$1" x="96.52" y="-149.86" rot="R90"/>
 <instance part="SUPPLY10" gate="+12V" x="88.9" y="-152.4"/>
+<instance part="SUPPLY11" gate="GND" x="-10.16" y="-157.48"/>
+<instance part="SUPPLY12" gate="GND" x="53.34" y="-175.26"/>
 </instances>
 <busses>
 </busses>
@@ -14889,6 +14893,16 @@ R2 2 3 {val-val*val/10}
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GAIN_IN" gate="G$1" pin="SLEEVE"/>
+<pinref part="SUPPLY11" gate="GND" pin="GND"/>
+<wire x1="-10.16" y1="-149.86" x2="-10.16" y2="-154.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="TONE_IN" gate="G$1" pin="SLEEVE"/>
+<pinref part="SUPPLY12" gate="GND" pin="GND"/>
+<wire x1="53.34" y1="-167.64" x2="53.34" y2="-172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -15162,7 +15176,7 @@ R2 2 3 {val-val*val/10}
 <segment>
 <pinref part="GAIN_IN" gate="G$1" pin="TIP"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="-12.7" y1="-144.78" x2="-7.62" y2="-144.78" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-144.78" x2="-7.62" y2="-144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -15216,7 +15230,7 @@ R2 2 3 {val-val*val/10}
 <segment>
 <pinref part="TONE_IN" gate="G$1" pin="TIP"/>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="-162.56" x2="55.88" y2="-162.56" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-162.56" x2="55.88" y2="-162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">

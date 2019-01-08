@@ -12467,7 +12467,7 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 </spice>
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
-<part name="IC1" library="GMSN" deviceset="OPAMP_DUAL" device="P" value="TL072">
+<part name="IC1" library="GMSN" deviceset="OPAMP_DUAL" device="D" value="TL072">
 <spice>
 <pinmapping isusermap="yes" isdevicewide="no">
 <pinmap gate="A" pin="+IN" pinorder="2"/>
@@ -12600,7 +12600,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
-<part name="C6" library="GMSN" deviceset="CAPACITOR-US" device="025-024X044" value="47nF">
+<part name="C6" library="GMSN" deviceset="CAPACITOR-US" device="C0805" value="47nF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -12618,7 +12618,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
-<part name="C7" library="GMSN" deviceset="CAPACITOR-US" device="050-024X044" value="10nF">
+<part name="C7" library="GMSN" deviceset="CAPACITOR-US" device="C0805" value="10nF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -12705,7 +12705,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
-<part name="C1" library="GMSN" deviceset="CAPACITOR-US" device="025-024X044" value="47nF">
+<part name="C1" library="GMSN" deviceset="CAPACITOR-US" device="C0805" value="47nF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -12714,7 +12714,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="C2" library="GMSN" deviceset="CAPACITOR-US" device="025-024X044" value="47nF">
+<part name="C2" library="GMSN" deviceset="CAPACITOR-US" device="C0805" value="47nF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -12723,7 +12723,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="C3" library="GMSN" deviceset="CAPACITOR-US" device="025-024X044" value="100nF">
+<part name="C3" library="GMSN" deviceset="CAPACITOR-US" device="C0805" value="100nF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -12732,7 +12732,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="C4" library="GMSN" deviceset="CAPACITOR-US" device="025-024X044" value="100nF">
+<part name="C4" library="GMSN" deviceset="CAPACITOR-US" device="C0805" value="100nF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
