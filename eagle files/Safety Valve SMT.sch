@@ -14738,6 +14738,26 @@ R2 2 3 {val-val*val/10}
 <part name="TONE_IN" library="MusicThingModular" deviceset="THONKICONN" device="NEW"/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
+<part name="R16" library="GMSN" deviceset="RESISTOR_US" device="M0805" value="470">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="R17" library="GMSN" deviceset="RESISTOR_US" device="M0805" value="470">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14792,6 +14812,10 @@ R2 2 3 {val-val*val/10}
 <instance part="TONE_IN" gate="G$1" x="45.72" y="-160.02" rot="R180"/>
 <instance part="SUPPLY7" gate="G$1" x="38.1" y="-109.22"/>
 <instance part="SUPPLY8" gate="G$1" x="101.6" y="-127"/>
+<instance part="R16" gate="G$1" x="33.02" y="-132.08" rot="R90"/>
+<instance part="SUPPLY9" gate="+12V" x="25.4" y="-134.62"/>
+<instance part="R17" gate="G$1" x="96.52" y="-149.86" rot="R90"/>
+<instance part="SUPPLY10" gate="+12V" x="88.9" y="-152.4"/>
 </instances>
 <busses>
 </busses>
@@ -14930,6 +14954,16 @@ R2 2 3 {val-val*val/10}
 <segment>
 <pinref part="SUPPLY4" gate="+12V" pin="+12V"/>
 <pinref part="TONE" gate="G$1" pin="E"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="SUPPLY9" gate="+12V" pin="+12V"/>
+<wire x1="33.02" y1="-137.16" x2="25.4" y2="-137.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="SUPPLY10" gate="+12V" pin="+12V"/>
+<wire x1="96.52" y1="-154.94" x2="88.9" y2="-154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -15092,6 +15126,9 @@ R2 2 3 {val-val*val/10}
 <wire x1="7.62" y1="-124.46" x2="7.62" y2="-116.84" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="-IN"/>
 <wire x1="7.62" y1="-116.84" x2="10.16" y2="-116.84" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="-124.46" x2="33.02" y2="-127" width="0.1524" layer="91"/>
+<junction x="33.02" y="-124.46"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -15143,6 +15180,9 @@ R2 2 3 {val-val*val/10}
 <wire x1="71.12" y1="-142.24" x2="71.12" y2="-134.62" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="-IN"/>
 <wire x1="71.12" y1="-134.62" x2="73.66" y2="-134.62" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="-142.24" x2="96.52" y2="-144.78" width="0.1524" layer="91"/>
+<junction x="96.52" y="-142.24"/>
 </segment>
 </net>
 <net name="N$17" class="0">

@@ -12627,7 +12627,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="D1" library="GMSN" deviceset="DIODE" device="_SOD-123FL" value="1N4001">
+<part name="D1" library="GMSN" deviceset="DIODE" device="DO-1N4148" value="1N4001">
 <spice>
 <pinmapping isusermap="yes" isdevicewide="no">
 <pinmap gate="G$1" pin="A" pinorder="1"/>
@@ -12637,7 +12637,7 @@ R2 2 3 {val-val*val/10}
 <attribute name="SPICEMODEL" value="DMOD"/>
 <attribute name="SPICEPREFIX" value="D"/>
 </part>
-<part name="D2" library="GMSN" deviceset="DIODE" device="_SOD-123FL" value="1N4001">
+<part name="D2" library="GMSN" deviceset="DIODE" device="DO-1N4148" value="1N4001">
 <spice>
 <pinmapping isusermap="yes" isdevicewide="no">
 <pinmap gate="G$1" pin="A" pinorder="1"/>
@@ -12647,7 +12647,7 @@ R2 2 3 {val-val*val/10}
 <attribute name="SPICEMODEL" value="DMOD"/>
 <attribute name="SPICEPREFIX" value="D"/>
 </part>
-<part name="CP1" library="GMSN" deviceset="CAPACITOR_POL-US" device="A" value="10u">
+<part name="CP1" library="GMSN" deviceset="CAPACITOR_POL-US" device="SANYO_D" value="10u">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="+" pinorder="1"/>
@@ -12656,7 +12656,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="CP2" library="GMSN" deviceset="CAPACITOR_POL-US" device="A" value="10u">
+<part name="CP2" library="GMSN" deviceset="CAPACITOR_POL-US" device="SANYO_D" value="10u">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="+" pinorder="1"/>
@@ -13100,8 +13100,10 @@ R2 2 3 {val-val*val/10}
 <pinref part="CP1" gate="G$1" pin="+"/>
 <wire x1="50.8" y1="68.58" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="68.58" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="68.58" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
 <junction x="55.88" y="68.58"/>
+<wire x1="66.04" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="68.58" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
 <label x="73.66" y="71.12" size="1.778" layer="95"/>
 </segment>

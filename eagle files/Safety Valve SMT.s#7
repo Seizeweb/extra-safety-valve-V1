@@ -12467,7 +12467,7 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 </spice>
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
-<part name="IC1" library="GMSN" deviceset="OPAMP_DUAL" device="D" value="TL072">
+<part name="IC1" library="GMSN" deviceset="OPAMP_DUAL" device="P" value="TL072">
 <spice>
 <pinmapping isusermap="yes" isdevicewide="no">
 <pinmap gate="A" pin="+IN" pinorder="2"/>
@@ -12600,7 +12600,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
-<part name="C6" library="GMSN" deviceset="CAPACITOR-US" device="C0805" value="47nF">
+<part name="C6" library="GMSN" deviceset="CAPACITOR-US" device="025-024X044" value="47nF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -12618,7 +12618,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
-<part name="C7" library="GMSN" deviceset="CAPACITOR-US" device="C0805" value="10nF">
+<part name="C7" library="GMSN" deviceset="CAPACITOR-US" device="050-024X044" value="10nF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -12627,7 +12627,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="D1" library="GMSN" deviceset="DIODE" device="_SOD-123FL" value="1N4001">
+<part name="D1" library="GMSN" deviceset="DIODE" device="DO-1N4148" value="1N4001">
 <spice>
 <pinmapping isusermap="yes" isdevicewide="no">
 <pinmap gate="G$1" pin="A" pinorder="1"/>
@@ -12637,7 +12637,7 @@ R2 2 3 {val-val*val/10}
 <attribute name="SPICEMODEL" value="DMOD"/>
 <attribute name="SPICEPREFIX" value="D"/>
 </part>
-<part name="D2" library="GMSN" deviceset="DIODE" device="_SOD-123FL" value="1N4001">
+<part name="D2" library="GMSN" deviceset="DIODE" device="DO-1N4148" value="1N4001">
 <spice>
 <pinmapping isusermap="yes" isdevicewide="no">
 <pinmap gate="G$1" pin="A" pinorder="1"/>
@@ -12647,7 +12647,7 @@ R2 2 3 {val-val*val/10}
 <attribute name="SPICEMODEL" value="DMOD"/>
 <attribute name="SPICEPREFIX" value="D"/>
 </part>
-<part name="CP1" library="GMSN" deviceset="CAPACITOR_POL-US" device="A" value="10u">
+<part name="CP1" library="GMSN" deviceset="CAPACITOR_POL-US" device="SANYO_D" value="10u">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="+" pinorder="1"/>
@@ -12656,7 +12656,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="CP2" library="GMSN" deviceset="CAPACITOR_POL-US" device="A" value="10u">
+<part name="CP2" library="GMSN" deviceset="CAPACITOR_POL-US" device="SANYO_D" value="10u">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="+" pinorder="1"/>
@@ -12705,7 +12705,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
-<part name="C1" library="GMSN" deviceset="CAPACITOR-US" device="C0805" value="47nF">
+<part name="C1" library="GMSN" deviceset="CAPACITOR-US" device="025-024X044" value="47nF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -12714,7 +12714,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="C2" library="GMSN" deviceset="CAPACITOR-US" device="C0805" value="47nF">
+<part name="C2" library="GMSN" deviceset="CAPACITOR-US" device="025-024X044" value="47nF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -12723,7 +12723,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="C3" library="GMSN" deviceset="CAPACITOR-US" device="C0805" value="100nF">
+<part name="C3" library="GMSN" deviceset="CAPACITOR-US" device="025-024X044" value="100nF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -12732,7 +12732,7 @@ R2 2 3 {val-val*val/10}
 </spice>
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="C4" library="GMSN" deviceset="CAPACITOR-US" device="C0805" value="100nF">
+<part name="C4" library="GMSN" deviceset="CAPACITOR-US" device="025-024X044" value="100nF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -13100,8 +13100,10 @@ R2 2 3 {val-val*val/10}
 <pinref part="CP1" gate="G$1" pin="+"/>
 <wire x1="50.8" y1="68.58" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="68.58" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="68.58" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
 <junction x="55.88" y="68.58"/>
+<wire x1="66.04" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="68.58" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
 <label x="73.66" y="71.12" size="1.778" layer="95"/>
 </segment>
